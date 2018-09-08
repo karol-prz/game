@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Run</title>
+        <meta charset="utf-8" />
+        <script src="js/game.js" ></script>
+        <script src="js/comments.js"></script>
+
+        <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+
+<body>
+
+    <header>
+		<h1>Run - The Original</h1>
+    </header>
+    
+    <main>
+    
+        <canvas width="1500" height="700"></canvas>
+        
+        <div class="center_helper">
+	    
+		    <article id="main_menu">
+		    
+				<button type="button">Play</button>
+				<button type="button">Upgrades</button>
+				<button type="button">Leaderboard</button>
+				<button type="button">Login</button>
+		    
+		    </article>
+		    
+		    
+		    
+		    <article id="upgrades">
+		    
+				<div class="title_bar">
+				    <button type="button" class="back_to_main">Main Menu</button>
+				    <h1>Upgrades</h1>
+				    <button type="button" class="play_button">Play</button>
+				</div>
+				
+				<section class="content">
+				
+				    <table>
+				    
+				    	<!-- Generated from game.js -->
+					
+				    
+				    </table>
+				    
+				    <p><b>Your Balance: </b><b id="total_score"></b></p>
+				
+				</section>
+		    </article>
+		    
+		    <article id="leaderboard">
+		    
+				<div class="title_bar">
+				    <button type="button" class="back_to_main">Main Menu</button>
+				    <h1>Leaderboard</h1>
+				    <button type="button" class="play_button">Play</button>
+
+				</div>
+				
+				<section class="content">
+				    
+				    <table>
+					<tr>
+					    <th>Username</th><th>High Score</th>
+					</tr>
+					
+					<tr>
+					    <td>Karol</td><td>150000</td>
+					</tr>
+					
+				    
+				    </table>
+				
+				</section>
+		    
+		    </article>
+		    
+		    <article id="login">
+		    
+				<div class="title_bar">
+				    <button type="button" class="back_to_main">Main Menu</button>
+				    <h1>Login</h1>		
+				    <button type="button" class="play_button">Play</button>
+				</div>
+				
+				<form>
+				
+				    <label for="name">Username: </label>
+				    <input type="text" id="name" name="name"/>
+				    <label for="password">Password: </label>
+				    <input type="password" id="password" name="password"/>
+
+				    <label for="password2">Confirm Password: </label>
+				    <input type="password" id="password2" name="password2"/>
+				    
+				    <div>
+				    	<span><a href="use js to setup">Not registered yet? Click here to register</a></span>
+				    	<input type="submit" id="login_button" value="Login"/>
+				    	<span id="warning"></span>
+				    </div>
+				
+				</form>
+		    
+		    </article>
+		   
+		   
+	   
+        </div>
+        
+    </main>
+
+    <aside>
+    	<article>
+        	<h1>How to Play:</h1>
+        	<p>Keep running for as long as you can! And have fun!</p>
+        	<ul>
+        		<li><b>Up arrow:</b> Jump</li>
+        		<li><b>Down arrow:</b> Duck</li>
+        		<li><b>Spacebar:</b> Boost</li>
+        	</ul>
+        </article>
+    </aside>
+
+    <aside>
+    	<section id="comments">
+    		<section>
+	    		<div>
+	    			<strong>Username</strong> 
+	    			<button type="button">Delete</button>
+	    		</div>
+	    		<p>Some really nice comment</p>
+    		</section>
+    	</section>
+
+
+    	<section id="post-comment">
+    		<h1>Post a Comment</h1>
+    		<form id="comment-form" action="python_files/comment.py" method="get">
+    			<textarea name="new_comment" id="new_comment" rows="5" cols="50"> </textarea>
+    			<input type="submit" value="Comment" />
+    		</form>
+
+    	</section>
+    </aside>
+
+    <footer>
+    	
+    	<p>
+    		<small>&copy; Karol Przestrzelski 2018</small>
+    	</p>
+    	<p>
+    		<small>Stickman animation created thanks to images created by <a href="https://scratch.mit.edu/projects/721937/">justtestingstickman</a>
+    	 	and <a href="https://scratch.mit.edu/projects/12078057/">justin_lau</a> from scratch.</small>
+    	 </p>
+    </footer>
+
+</body>
+
+</html>

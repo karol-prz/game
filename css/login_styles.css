@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	width: 70%;
+	margin: auto;
+	margin-top: 3em;
+	font-size: 16px;
+	
+}
+
+#login{
+    background: beige;
+    width: 80%;
+    height: 90%;
+    margin: 1em auto;
+}
+
+
+/* Title Bar */
+.title_bar{
+    background: cadetblue;
+    font-size: 1.2em;
+    padding: 1em;
+
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "left center right"
+    
+}
+
+.title_bar h1{
+    width: 50%;
+    margin: 0 auto;
+    grid-area: center;
+}
+
+.title_bar button{
+
+    margin: auto 1em;
+    padding: 0.5em 2em;
+}
+.title_bar .back_to_game{
+    grid-area: left;
+}
+
+/* Login page */
+#login form{
+	font-size: 1.5em;
+    margin: 1em auto;
+    background: burlywood;
+    padding: 0.5em;
+    border-radius: 0.5em;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto;
+    grid-template-areas: "nameL nameI" "pwdL pwdI" "pwd2L pwd2I" "s s";
+    width: 90%;
+    grid-row-gap: 0.5em;
+    padding-top: 2em;
+    
+
+}
+
+
+
+label[for="name"]{
+    grid-area: nameL;
+}
+label[for="password"]{
+    grid-area: pwdL;
+}
+label[for="password2"]{
+    grid-area: pwd2L;
+}
+#name{
+    grid-area: nameI;
+}
+#password{
+    grid-area: pwdI;
+}
+#password2{
+    grid-area: pwd2I;
+}
+
+#login form div{
+	text-align: center;
+    grid-area: s;
+    margin: 2em 0;
+}
+
+#login_button{
+    
+    width: 50%;
+    padding: 0.5em;
+    margin: 0.1em auto;
+    margin-top: 0.5em;
+
+}
+
+#login span{
+    font-size: 0.75em;
+    display:block;
+    margin: 0.1em auto;
+}
